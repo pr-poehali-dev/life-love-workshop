@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import Icon from "@/components/ui/icon";
 
-const CHEREMUKHA_IMG = "https://cdn.poehali.dev/projects/13ac3431-8be6-43ae-9b05-653727179c8c/files/5fa63e66-2554-4f24-8fe2-b4b79f8863dd.jpg";
+const CHEREMUKHA_IMG = "https://cdn.poehali.dev/projects/13ac3431-8be6-43ae-9b05-653727179c8c/files/b5c01d3c-6c7f-4941-9e0a-937e36b40697.jpg";
 const ROOTS_IMG = "https://cdn.poehali.dev/projects/13ac3431-8be6-43ae-9b05-653727179c8c/files/fd8651a3-5461-4a0c-88ad-b9ac95fe7041.jpg";
 
 function useInView(threshold = 0.15) {
@@ -108,13 +108,13 @@ export default function Index() {
             src={CHEREMUKHA_IMG}
             alt="Яблоня в цвету"
             className="w-full h-full object-cover"
-            style={{ filter: "brightness(0.55) saturate(0.8)" }}
+            style={{ filter: "brightness(1.05) saturate(1.1)" }}
           />
           <div
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(to bottom, rgba(30,22,15,0.35) 0%, rgba(30,22,15,0.55) 60%, hsl(38,30%,97%) 100%)",
+                "linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.25) 60%, hsl(38,30%,97%) 100%)",
             }}
           />
         </div>
@@ -122,19 +122,19 @@ export default function Index() {
         <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
           <p
             className="font-golos text-sm tracking-[0.25em] uppercase mb-6 opacity-0-init animate-fade-in"
-            style={{ color: "hsl(290,25%,88%)", animationFillMode: "forwards" }}
+            style={{ color: "hsl(145,30%,28%)", animationFillMode: "forwards" }}
           >
             Терапевтическая группа
           </p>
           <h1
             className="font-cormorant text-4xl md:text-6xl font-light italic mb-4 opacity-0-init animate-fade-up"
-            style={{ color: "hsl(38,40%,96%)", animationFillMode: "forwards", lineHeight: 1.15 }}
+            style={{ color: "hsl(25,30%,18%)", animationFillMode: "forwards", lineHeight: 1.15 }}
           >
             Жизнь и любовь<br />против смерти и боли
           </h1>
           <p
             className="font-cormorant text-2xl md:text-3xl font-light italic mb-10 opacity-0-init animate-fade-up delay-300"
-            style={{ color: "hsl(38,35%,82%)", animationFillMode: "forwards" }}
+            style={{ color: "hsl(145,22%,30%)", animationFillMode: "forwards" }}
           >
             Когда яблоня цветёт — хочется жить
           </p>
@@ -142,8 +142,8 @@ export default function Index() {
             href="#contact"
             className="opacity-0-init animate-fade-up delay-500 inline-block font-golos text-sm tracking-widest uppercase px-8 py-4 transition-all duration-300 hover:scale-105"
             style={{
-              background: "hsl(290,18%,72%)",
-              color: "hsl(25,25%,18%)",
+              background: "hsl(145,22%,32%)",
+              color: "hsl(38,40%,96%)",
               borderRadius: "2px",
               animationFillMode: "forwards",
             }}
