@@ -102,27 +102,38 @@ export default function Index() {
     <div className="min-h-screen" style={{ background: "hsl(38,30%,97%)", color: "hsl(25,25%,28%)" }}>
 
       {/* HERO */}
-      <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex flex-col justify-center overflow-hidden">
+        {/* Картинка сдвинута вправо */}
         <div className="absolute inset-0">
           <img
             src={CHEREMUKHA_IMG}
             alt="Яблоня в цвету"
             className="w-full h-full object-cover"
-            style={{ filter: "brightness(1.05) saturate(1.1)" }}
+            style={{ objectPosition: "70% center", filter: "brightness(1.05) saturate(1.1)" }}
           />
+          {/* Градиент: слева — размытый белёсый туман, справа — прозрачно */}
           <div
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.25) 60%, hsl(38,30%,97%) 100%)",
+                "linear-gradient(to right, rgba(245,242,235,0.92) 0%, rgba(245,242,235,0.75) 35%, rgba(245,242,235,0.2) 60%, rgba(245,242,235,0.0) 100%)",
+            }}
+          />
+          {/* Низ — переход в фон страницы */}
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(to bottom, transparent 60%, hsl(38,30%,97%) 100%)",
             }}
           />
         </div>
 
-        <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
+        {/* Текст — слева */}
+        <div className="relative z-10 px-8 md:px-16 max-w-xl">
           <p
             className="font-golos text-sm tracking-[0.25em] uppercase mb-6 opacity-0-init animate-fade-in"
-            style={{ color: "hsl(145,30%,28%)", animationFillMode: "forwards" }}
+            style={{ color: "hsl(145,30%,32%)", animationFillMode: "forwards" }}
           >
             Терапевтическая группа
           </p>
@@ -134,9 +145,9 @@ export default function Index() {
           </h1>
           <p
             className="font-cormorant text-2xl md:text-3xl font-light italic mb-10 opacity-0-init animate-fade-up delay-300"
-            style={{ color: "hsl(145,22%,30%)", animationFillMode: "forwards" }}
+            style={{ color: "hsl(145,22%,32%)", animationFillMode: "forwards" }}
           >
-            Когда яблоня цветёт — хочется жить
+            Когда яблоня цветёт —<br />хочется жить
           </p>
           <a
             href="#contact"
@@ -152,7 +163,7 @@ export default function Index() {
           </a>
         </div>
 
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce" style={{ color: "hsl(38,30%,80%)" }}>
+        <div className="absolute bottom-8 left-8 md:left-16 animate-bounce" style={{ color: "hsl(145,22%,40%)" }}>
           <Icon name="ChevronDown" size={24} />
         </div>
       </section>
