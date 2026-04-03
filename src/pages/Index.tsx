@@ -474,39 +474,73 @@ export default function Index() {
             Напишите нам — расскажем подробнее о группе, ответим на вопросы
             и поможем понять, подходит ли вам этот формат.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a
-              href="https://t.me/"
-              className="inline-flex items-center gap-3 font-golos text-sm tracking-widest uppercase px-8 py-4 transition-all duration-300 hover:scale-105"
-              style={{
-                background: "hsl(290,18%,72%)",
-                color: "hsl(25,25%,18%)",
-                borderRadius: "2px",
-              }}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-xl mx-auto mt-2">
+            {/* Геннадий */}
+            <div
+              className="p-6 text-left"
+              style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "4px" }}
             >
-              <Icon name="Send" size={16} />
-              Написать в Telegram
-            </a>
-            <a
-              href="https://wa.me/"
-              className="inline-flex items-center gap-3 font-golos text-sm tracking-widest uppercase px-8 py-4 transition-all duration-300 hover:opacity-80"
-              style={{
-                background: "transparent",
-                color: "hsl(38,30%,85%)",
-                border: "1px solid hsl(38,20%,55%)",
-                borderRadius: "2px",
-              }}
+              <p className="font-cormorant text-2xl font-light italic mb-1" style={{ color: "hsl(38,40%,93%)" }}>
+                Геннадий
+              </p>
+              <p className="font-golos text-xs tracking-widest uppercase mb-4" style={{ color: "hsl(290,25%,65%)" }}>
+                Кемерово
+              </p>
+              <div className="space-y-3">
+                <a
+                  href="tel:+79039447116"
+                  className="flex items-center gap-3 transition-opacity hover:opacity-70"
+                  style={{ color: "hsl(38,25%,78%)" }}
+                >
+                  <Icon name="Phone" size={15} />
+                  <span className="font-golos text-sm">+7 903 944-71-16</span>
+                </a>
+                <a
+                  href="https://t.me/avilov_g"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 transition-opacity hover:opacity-70"
+                  style={{ color: "hsl(38,25%,78%)" }}
+                >
+                  <Icon name="Send" size={15} />
+                  <span className="font-golos text-sm">@avilov_g</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Юлия */}
+            <div
+              className="p-6 text-left"
+              style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "4px" }}
             >
-              <Icon name="MessageCircle" size={16} />
-              WhatsApp
-            </a>
+              <p className="font-cormorant text-2xl font-light italic mb-1" style={{ color: "hsl(38,40%,93%)" }}>
+                Юлия
+              </p>
+              <p className="font-golos text-xs tracking-widest uppercase mb-4" style={{ color: "hsl(290,25%,65%)" }}>
+                Новосибирск
+              </p>
+              <div className="space-y-3">
+                <a
+                  href="tel:+79137465908"
+                  className="flex items-center gap-3 transition-opacity hover:opacity-70"
+                  style={{ color: "hsl(38,25%,78%)" }}
+                >
+                  <Icon name="Phone" size={15} />
+                  <span className="font-golos text-sm">+7 913 746-59-08</span>
+                </a>
+                <a
+                  href="https://t.me/yv_psiholog"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 transition-opacity hover:opacity-70"
+                  style={{ color: "hsl(38,25%,78%)" }}
+                >
+                  <Icon name="Send" size={15} />
+                  <span className="font-golos text-sm">@yv_psiholog</span>
+                </a>
+              </div>
+            </div>
           </div>
-          <p className="font-golos text-sm mt-10" style={{ color: "hsl(38,15%,58%)" }}>
-            Или напишите на почту:{" "}
-            <a href="mailto:hello@example.com" className="underline underline-offset-4 hover:opacity-80 transition-opacity">
-              hello@example.com
-            </a>
-          </p>
         </AnimSection>
       </section>
 
