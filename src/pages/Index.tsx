@@ -312,33 +312,43 @@ export default function Index() {
               </div>
             </AnimSection>
 
-            {/* Второй терапевт — заглушка */}
+            {/* Геннадий Авилов */}
             <AnimSection>
               <div>
                 <div
-                  className="mb-7 flex items-center justify-center"
-                  style={{
-                    width: "220px",
-                    height: "270px",
-                    background: "hsl(290,18%,91%)",
-                    borderRadius: "4px",
-                    border: "1px dashed hsl(290,18%,75%)",
-                  }}
+                  className="mb-7 overflow-hidden"
+                  style={{ borderRadius: "4px", width: "220px", height: "270px" }}
                 >
-                  <div className="text-center">
-                    <Icon name="User" size={36} className="mx-auto mb-2" style={{ color: "hsl(290,18%,60%)" }} />
-                    <p className="font-golos text-xs" style={{ color: "hsl(290,18%,60%)" }}>Скоро</p>
-                  </div>
+                  <img
+                    src="https://cdn.poehali.dev/projects/13ac3431-8be6-43ae-9b05-653727179c8c/bucket/020e9384-79cf-4c57-a66d-1fbfff1488ca.JPG"
+                    alt="Геннадий Авилов"
+                    className="w-full h-full object-cover object-top transition-transform duration-700 hover:scale-105"
+                  />
                 </div>
                 <h3 className="font-cormorant text-3xl font-light italic mb-1" style={{ color: "hsl(25,25%,28%)" }}>
-                  Имя Терапевта
+                  Геннадий Авилов
                 </h3>
                 <p className="font-golos text-sm mb-5" style={{ color: "hsl(290,18%,55%)" }}>
-                  Город
+                  Кемерово · Опыт более 18 лет
                 </p>
-                <p className="font-golos text-base font-light leading-relaxed" style={{ color: "hsl(25,20%,50%)" }}>
-                  Информация о втором ведущем появится скоро.
-                </p>
+                <div className="space-y-2.5">
+                  {[
+                    "Гештальт-терапевт, супервизор",
+                    "Кандидат психологических наук, доцент КемГУ",
+                    "Ассоциированный тренер Московского Гештальт Института",
+                    "Специалист по экзистенциальным вопросам, кризисной психологии и работе с утратами",
+                  ].map((spec, j) => (
+                    <div key={j} className="flex items-start gap-3">
+                      <div
+                        className="w-1 h-1 rounded-full mt-[9px] flex-shrink-0"
+                        style={{ background: "hsl(290,18%,65%)" }}
+                      />
+                      <p className="font-golos text-sm font-light leading-relaxed" style={{ color: "hsl(25,20%,42%)" }}>
+                        {spec}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </AnimSection>
           </div>
