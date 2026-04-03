@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import Icon from "@/components/ui/icon";
 
-const CHEREMUKHA_IMG = "https://cdn.poehali.dev/projects/13ac3431-8be6-43ae-9b05-653727179c8c/files/0cbb4b12-00e0-46c7-b3e3-75eb40227a3a.jpg";
+const CHEREMUKHA_IMG = "https://cdn.poehali.dev/projects/13ac3431-8be6-43ae-9b05-653727179c8c/files/5fa63e66-2554-4f24-8fe2-b4b79f8863dd.jpg";
 const ROOTS_IMG = "https://cdn.poehali.dev/projects/13ac3431-8be6-43ae-9b05-653727179c8c/files/fd8651a3-5461-4a0c-88ad-b9ac95fe7041.jpg";
 
 function useInView(threshold = 0.15) {
@@ -22,7 +22,7 @@ const themes = [
   {
     icon: "🌸",
     title: "Цветение",
-    desc: "Как черёмуха расцветает после долгой зимы, так и мы учимся открываться — радости, близости, новому опыту.",
+    desc: "Как яблоня расцветает после долгой зимы, так и мы учимся открываться — радости, близости, новому опыту.",
   },
   {
     icon: "🌿",
@@ -110,7 +110,7 @@ export default function Index() {
         <div className="absolute inset-0">
           <img
             src={CHEREMUKHA_IMG}
-            alt="Черёмуха"
+            alt="Яблоня в цвету"
             className="w-full h-full object-cover"
             style={{ filter: "brightness(0.55) saturate(0.8)" }}
           />
@@ -131,17 +131,16 @@ export default function Index() {
             Терапевтическая группа
           </p>
           <h1
-            className="font-cormorant text-7xl md:text-9xl font-light italic mb-6 opacity-0-init animate-fade-up"
-            style={{ color: "hsl(38,40%,96%)", animationFillMode: "forwards", lineHeight: 1.05 }}
+            className="font-cormorant text-4xl md:text-6xl font-light italic mb-4 opacity-0-init animate-fade-up"
+            style={{ color: "hsl(38,40%,96%)", animationFillMode: "forwards", lineHeight: 1.15 }}
           >
-            Черёмуха
+            Жизнь и любовь<br />против смерти и боли
           </h1>
           <p
-            className="font-golos text-lg md:text-xl font-light leading-relaxed mb-10 opacity-0-init animate-fade-up delay-300"
-            style={{ color: "hsl(38,30%,85%)", animationFillMode: "forwards" }}
+            className="font-cormorant text-2xl md:text-3xl font-light italic mb-10 opacity-0-init animate-fade-up delay-300"
+            style={{ color: "hsl(38,35%,82%)", animationFillMode: "forwards" }}
           >
-            Пространство, где можно быть собой.<br />
-            Встретить других. Найти точку опоры.
+            Когда яблоня цветёт — хочется жить
           </p>
           <a
             href="#contact"
@@ -170,17 +169,17 @@ export default function Index() {
               О группе
             </p>
             <h2 className="font-cormorant text-5xl md:text-6xl font-light italic mb-8" style={{ color: "hsl(145,22%,28%)" }}>
-              Почему черёмуха?
+              Почему яблоня?
             </h2>
             <p className="font-golos text-lg font-light leading-[1.9] mb-6" style={{ color: "hsl(25,20%,38%)" }}>
-              Черёмуха цветёт коротко и мощно. Её аромат невозможно не заметить.
-              Она растёт у воды, на границе — там, где встречаются разные стихии.
-              Её корни уходят глубоко, давая устойчивость в любую непогоду.
+              Яблоня цветёт — и в этом есть что-то неотразимо живое. 
+              Её цветение напоминает: жизнь продолжается, даже когда внутри холодно и темно.
+              Её корни держат крепко, а плоды созревают не сразу.
             </p>
             <p className="font-golos text-lg font-light leading-[1.9]" style={{ color: "hsl(25,20%,38%)" }}>
-              Именно эти образы лежат в основе нашей группы: <em>цветение, укоренённость, встреча, граница</em>.
-              Здесь мы работаем с тем, что живо прямо сейчас — с чувствами, контактом,
-              отношениями — в безопасном и поддерживающем пространстве.
+              Название группы — <em>«Жизнь и любовь против смерти и боли»</em> — звучит как вызов.
+              Это пространство, где мы встречаем боль лицом к лицу и выбираем жить:
+              полно, честно, в контакте с собой и другими.
             </p>
           </AnimSection>
         </div>
@@ -521,7 +520,7 @@ export default function Index() {
         style={{ background: "hsl(25,25%,18%)", borderTop: "1px solid hsl(25,15%,25%)" }}
       >
         <p className="font-golos text-xs font-light" style={{ color: "hsl(38,15%,50%)" }}>
-          © 2025 Терапевтическая группа «Черёмуха»
+          © 2025 Терапевтическая группа «Жизнь и любовь против смерти и боли»
         </p>
       </footer>
     </div>
