@@ -272,43 +272,75 @@ export default function Index() {
             </h2>
           </AnimSection>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            {[
-              {
-                name: "Имя Терапевта",
-                role: "Гештальт-терапевт",
-                bio: "Сертифицированный гештальт-терапевт, 8 лет практики. Специализация — групповая работа, телесность, отношения. Ведёт индивидуальные и групповые сессии.",
-                exp: "8 лет практики",
-              },
-              {
-                name: "Имя Терапевта",
-                role: "Гештальт-терапевт",
-                bio: "Психолог, гештальт-терапевт, 6 лет в профессии. Работает с тревогой, горем, экзистенциальными кризисами. Прошла личную терапию и супервизию.",
-                exp: "6 лет практики",
-              },
-            ].map((therapist, i) => (
-              <AnimSection key={i}>
-                <div>
-                  <div
-                    className="w-20 h-20 rounded-full mb-6 flex items-center justify-center"
-                    style={{ background: "hsl(290,18%,88%)" }}
-                  >
-                    <Icon name="User" size={32} style={{ color: "hsl(290,18%,55%)" }} />
-                  </div>
-                  <h3 className="font-cormorant text-3xl font-light italic mb-1" style={{ color: "hsl(25,25%,28%)" }}>
-                    {therapist.name}
-                  </h3>
-                  <p className="font-golos text-sm mb-1" style={{ color: "hsl(290,18%,55%)" }}>
-                    {therapist.role}
-                  </p>
-                  <p className="font-golos text-xs mb-4" style={{ color: "hsl(145,18%,45%)" }}>
-                    {therapist.exp}
-                  </p>
-                  <p className="font-golos text-base font-light leading-relaxed" style={{ color: "hsl(25,20%,42%)" }}>
-                    {therapist.bio}
-                  </p>
+            {/* Юлия Воропаева */}
+            <AnimSection>
+              <div>
+                <div
+                  className="mb-7 overflow-hidden"
+                  style={{ borderRadius: "4px", width: "220px", height: "270px" }}
+                >
+                  <img
+                    src="https://cdn.poehali.dev/projects/13ac3431-8be6-43ae-9b05-653727179c8c/bucket/0e359573-3500-4ec5-a3f1-d24eb47ee092.jpg"
+                    alt="Юлия Воропаева"
+                    className="w-full h-full object-cover object-top transition-transform duration-700 hover:scale-105"
+                  />
                 </div>
-              </AnimSection>
-            ))}
+                <h3 className="font-cormorant text-3xl font-light italic mb-1" style={{ color: "hsl(25,25%,28%)" }}>
+                  Юлия Воропаева
+                </h3>
+                <p className="font-golos text-sm mb-5" style={{ color: "hsl(290,18%,55%)" }}>
+                  Новосибирск · Опыт более 5 лет
+                </p>
+                <div className="space-y-2.5">
+                  {[
+                    "Клинический психолог",
+                    "Аккредитованный гештальт-терапевт, супервизор",
+                    "Психолог по психосоматике и репродуктивным запросам",
+                    "Семейный системный терапевт",
+                  ].map((spec, j) => (
+                    <div key={j} className="flex items-start gap-3">
+                      <div
+                        className="w-1 h-1 rounded-full mt-[9px] flex-shrink-0"
+                        style={{ background: "hsl(290,18%,65%)" }}
+                      />
+                      <p className="font-golos text-sm font-light leading-relaxed" style={{ color: "hsl(25,20%,42%)" }}>
+                        {spec}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </AnimSection>
+
+            {/* Второй терапевт — заглушка */}
+            <AnimSection>
+              <div>
+                <div
+                  className="mb-7 flex items-center justify-center"
+                  style={{
+                    width: "220px",
+                    height: "270px",
+                    background: "hsl(290,18%,91%)",
+                    borderRadius: "4px",
+                    border: "1px dashed hsl(290,18%,75%)",
+                  }}
+                >
+                  <div className="text-center">
+                    <Icon name="User" size={36} className="mx-auto mb-2" style={{ color: "hsl(290,18%,60%)" }} />
+                    <p className="font-golos text-xs" style={{ color: "hsl(290,18%,60%)" }}>Скоро</p>
+                  </div>
+                </div>
+                <h3 className="font-cormorant text-3xl font-light italic mb-1" style={{ color: "hsl(25,25%,28%)" }}>
+                  Имя Терапевта
+                </h3>
+                <p className="font-golos text-sm mb-5" style={{ color: "hsl(290,18%,55%)" }}>
+                  Город
+                </p>
+                <p className="font-golos text-base font-light leading-relaxed" style={{ color: "hsl(25,20%,50%)" }}>
+                  Информация о втором ведущем появится скоро.
+                </p>
+              </div>
+            </AnimSection>
           </div>
         </div>
       </section>
