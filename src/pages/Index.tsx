@@ -368,12 +368,12 @@ export default function Index() {
           </AnimSection>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {[
-              { icon: "Calendar", label: "Дата начала", value: "Уточняется" },
-              { icon: "Clock", label: "Время", value: "Уточняется" },
-              { icon: "MapPin", label: "Место", value: "Уточняется" },
+              { icon: "Calendar", label: "Дата", value: "6–7 июня 2026" },
+              { icon: "Clock", label: "Время", value: "11:00 — 19:00" },
+              { icon: "Timer", label: "Длительность", value: "16 часов" },
+              { icon: "MapPin", label: "Место", value: "Центральный район, Новосибирск" },
               { icon: "Users", label: "Участников", value: "6–10 человек" },
-              { icon: "Repeat", label: "Периодичность", value: "Раз в неделю" },
-              { icon: "Banknote", label: "Стоимость", value: "Уточняется" },
+              { icon: "Banknote", label: "Стоимость", value: "10 000 ₽" },
             ].map((item, i) => (
               <AnimSection key={i}>
                 <div
