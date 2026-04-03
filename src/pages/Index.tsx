@@ -372,7 +372,7 @@ export default function Index() {
               { icon: "Clock", label: "Время", value: "11:00 — 19:00" },
               { icon: "Timer", label: "Длительность", value: "16 часов" },
               { icon: "MapPin", label: "Место", value: "Центральный район, Новосибирск" },
-              { icon: "Users", label: "Участников", value: "6–10 человек" },
+              { icon: "Users", label: "Участников", value: "до 16 человек" },
               { icon: "Banknote", label: "Стоимость", value: "10 000 ₽" },
             ].map((item, i) => (
               <AnimSection key={i}>
