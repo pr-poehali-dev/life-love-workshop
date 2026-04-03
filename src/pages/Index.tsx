@@ -101,6 +101,49 @@ export default function Index() {
   return (
     <div className="min-h-screen" style={{ background: "hsl(38,30%,97%)", color: "hsl(25,25%,28%)" }}>
 
+      {/* НАВИГАЦИЯ */}
+      <nav
+        className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 md:px-16 py-4"
+        style={{
+          background: "rgba(245,242,235,0.85)",
+          backdropFilter: "blur(12px)",
+          borderBottom: "1px solid rgba(145,120,90,0.12)",
+        }}
+      >
+        <a href="#" className="font-cormorant text-xl font-light italic" style={{ color: "hsl(25,30%,22%)" }}>
+          Жизнь и любовь
+        </a>
+        <div className="hidden md:flex items-center gap-8">
+          {[
+            { label: "О группе", href: "#about" },
+            { label: "Темы", href: "#themes" },
+            { label: "Ведущие", href: "#therapists" },
+            { label: "Условия", href: "#format" },
+            { label: "Вопросы", href: "#faq" },
+          ].map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className="font-golos text-sm transition-colors duration-200 hover:opacity-60"
+              style={{ color: "hsl(25,25%,35%)" }}
+            >
+              {item.label}
+            </a>
+          ))}
+        </div>
+        <a
+          href="#contact"
+          className="font-golos text-xs tracking-widest uppercase px-5 py-2.5 transition-all duration-300 hover:scale-105"
+          style={{
+            background: "hsl(145,22%,32%)",
+            color: "hsl(38,40%,96%)",
+            borderRadius: "2px",
+          }}
+        >
+          Записаться
+        </a>
+      </nav>
+
       {/* HERO */}
       <section className="relative min-h-screen flex flex-col justify-center overflow-hidden">
         {/* Картинка сдвинута вправо */}
@@ -169,7 +212,7 @@ export default function Index() {
       </section>
 
       {/* О ГРУППЕ */}
-      <section className="py-24 px-6" style={{ background: "hsl(38,30%,97%)" }}>
+      <section id="about" className="py-24 px-6" style={{ background: "hsl(38,30%,97%)" }}>
         <div className="max-w-3xl mx-auto">
           <AnimSection>
             <p className="font-golos text-xs tracking-[0.2em] uppercase mb-4" style={{ color: "hsl(290,18%,60%)" }}>
@@ -193,7 +236,7 @@ export default function Index() {
       </section>
 
       {/* ТЕМЫ */}
-      <section className="relative py-28 overflow-hidden">
+      <section id="themes" className="relative py-28 overflow-hidden">
         <div className="absolute inset-0">
           <img
             src={ROOTS_IMG}
@@ -267,7 +310,7 @@ export default function Index() {
       </section>
 
       {/* ТЕРАПЕВТЫ */}
-      <section className="py-24 px-6" style={{ background: "hsl(38,30%,97%)" }}>
+      <section id="therapists" className="py-24 px-6" style={{ background: "hsl(38,30%,97%)" }}>
         <div className="max-w-4xl mx-auto">
           <AnimSection>
             <p className="font-golos text-xs tracking-[0.2em] uppercase mb-4" style={{ color: "hsl(290,18%,60%)" }}>
@@ -362,7 +405,7 @@ export default function Index() {
       </section>
 
       {/* ФОРМАТ */}
-      <section className="py-24 px-6" style={{ background: "hsl(145,15%,92%)" }}>
+      <section id="format" className="py-24 px-6" style={{ background: "hsl(145,15%,92%)" }}>
         <div className="max-w-4xl mx-auto">
           <AnimSection>
             <p className="font-golos text-xs tracking-[0.2em] uppercase mb-4" style={{ color: "hsl(145,22%,40%)" }}>
@@ -404,7 +447,7 @@ export default function Index() {
       </section>
 
       {/* FAQ */}
-      <section className="py-24 px-6" style={{ background: "hsl(38,30%,97%)" }}>
+      <section id="faq" className="py-24 px-6" style={{ background: "hsl(38,30%,97%)" }}>
         <div className="max-w-3xl mx-auto">
           <AnimSection>
             <p className="font-golos text-xs tracking-[0.2em] uppercase mb-4" style={{ color: "hsl(290,18%,60%)" }}>
