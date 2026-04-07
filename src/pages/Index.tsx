@@ -294,9 +294,7 @@ export default function Index() {
                 <h3 className="font-cormorant text-3xl font-light italic mb-1" style={{ color: "hsl(25,25%,28%)" }}>
                   Юлия Воропаева
                 </h3>
-                <p className="font-golos text-sm mb-5" style={{ color: "hsl(290,18%,55%)" }}>
-                  Новосибирск · Опыт более 5 лет
-                </p>
+                <p className="font-golos text-sm mb-5" style={{ color: "hsl(290,18%,55%)" }}>Новосибирск · Опыт более 10 лет</p>
                 <div className="space-y-2.5">
                   {[
                     "Клинический психолог",
