@@ -141,7 +141,7 @@ export default function Index() {
             className="font-cormorant text-4xl md:text-6xl font-light italic mb-4 opacity-0-init animate-fade-up"
             style={{ color: "hsl(25,30%,18%)", animationFillMode: "forwards", lineHeight: 1.15 }}
           >
-            Жизнь и любовь<br />против смерти и боли
+            Жизнь и любовь<br />вопреки боли и страхам
           </h1>
           <p
             className="font-cormorant text-2xl md:text-3xl font-light italic mb-10 opacity-0-init animate-fade-up delay-300"
@@ -184,7 +184,7 @@ export default function Index() {
               Её корни держат крепко, а плоды созревают не сразу.
             </p>
             <p className="font-golos text-lg font-light leading-[1.9]" style={{ color: "hsl(25,20%,38%)" }}>
-              Название группы — <em>«Жизнь и любовь против смерти и боли»</em> — звучит как вызов.
+              Название группы — <em>«Жизнь и любовь вопреки боли и страхам»</em> — звучит как вызов.
               Это пространство, где мы встречаем боль лицом к лицу и выбираем жить:
               полно, честно, в контакте с собой и другими.
             </p>
